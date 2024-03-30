@@ -1,0 +1,1105 @@
+body {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo img {
+    height: 23px;
+    width: fit-content;
+    position: relative;
+    top: 10px;
+    left: 25px;
+    scale: 95%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    position: relative;
+    left: -140px;
+    color: #323a47;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -50px;
+}
+
+.search button {
+    background: none;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.login{
+    display: flex;
+    cursor: pointer;
+}
+
+.login a {
+    color: #323a47;
+    text-decoration: none;
+    width: 150px;
+    
+}
+.login img {
+    height: 32px;
+    width: auto;
+    padding: 3%;
+}
+
+.language{
+    display: flex;
+}
+
+.language select {
+    background-color: transparent;
+    color: #323a47;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language img{
+    height: 20px;
+    width: auto;
+    padding: 3%;
+}
+
+.back{
+    background-image: url(Media/desktop_web_slider_en.webp);
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 400px;
+    position: relative;
+    top: 60px;
+}
+
+.back button{
+    position: relative;
+    top: 150px;
+    left: 200px;
+    height: 40px;
+    width: 110px;
+    background-color: #fdc33c; /* Butonun arka plan rengi */
+    color: #323a47;
+    border-radius: 5px; /* Butonun köşelerini yuvarlama */
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.back img{
+    scale: 5%;
+    position: relative;
+    top: -670px;
+    left: 700px;
+}
+
+.front {
+    width: 1240px;
+    position: relative;
+    left: 150px;
+    top: -80px;
+}
+
+.button-container-up{
+    display:flex;
+    box-shadow: 0 -1px 15px gray;
+}
+
+.button-container-up button{
+    height: 70px;
+    width: 310px;
+    border: 1px transparent;
+}
+
+#white{
+    cursor: pointer;
+    background-color: white;
+    border-top-left-radius: 15px;
+}
+
+#white span{
+    position:relative;
+    top: -20px;
+    left: -10px;
+    font-size: 15px;
+}
+
+#white img{
+    scale: 70%;
+    position: relative;
+    left: -20px;
+}
+
+#gray1{
+    cursor: pointer;
+    background-color: #f4f5f7;
+    border-left: 2px gray;
+}
+
+#gray1 span{
+    position:relative;
+    top: -20px;
+    left: -10px;
+    font-size: 15px;
+}
+
+#gray1 img{
+    scale: 70%;
+    position: relative;
+    left: -20px;
+}
+
+#gray2{
+    cursor: pointer;
+    background-color: #f4f5f7;
+    border-left: 2px gray;
+}
+
+#gray2 span{
+    position:relative;
+    top: -20px;
+    left: -10px;
+    font-size: 15px;
+}
+
+#gray2 img{
+    scale: 70%;
+    position: relative;
+    left: -20px;
+}
+
+#gray3{
+    cursor: pointer;
+    background-color: #f4f5f7;
+    border-top-right-radius: 15px;
+    border-left: 2px gray;
+}
+
+#gray3 span{
+    position:relative;
+    top: -20px;
+    left: -10px;
+    font-size: 15px;
+}
+
+#gray3 img{
+    scale: 70%;
+    position: relative;
+    left: -20px;
+}
+
+.button-container-mid{
+    background-color: white;
+    border: 1px black;
+    cursor: pointer;
+    padding: 10px 20px;
+    justify-content: center; 
+    width: 1200px;
+    height: 200px;
+    box-shadow: 1px 0 15px #f4f5f7;
+    box-shadow: -1px 0 15px #f4f5f7;
+}
+
+.button-container-mid img{
+    scale: 80%;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-container-mid input{
+    height: 50px;
+    width: auto;
+    margin-inline: 15px;
+    position: relative;
+    top: 25px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color:lightgray;
+    font-weight: bold;
+}
+
+.button-container-mid button{
+    height: 60px;
+    width: auto;
+    position:relative;
+    top: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: transparent;
+    background-color: #f49d18;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container-down{
+    background-color:#f4f5f7;
+    border: 1px black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 1200px;
+    height: 27px;
+    box-shadow: 0 1px 15px #f4f5f7;
+}
+
+.button-container-down img{
+    position: relative;
+    top: -5px;
+}
+
+.button-container-down h1{
+    color: #323a47;
+    font-size: 15px;
+    font-family: sans-serif;
+    position: relative;
+    left: 60px;
+    top: -56px;
+}
+
+.button-container-down h2{
+    color: #323a47;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: relative;
+    left: 60px;
+    top: -63px;
+}
+
+.button-container-down button{
+    position: relative;
+    top: -95px;
+    left: 330px;
+    scale: 140%;
+    border: transparent;
+    background-color:transparent;
+}
+
+.green-banner{
+    position: relative;
+    left: 150px;
+    background-image: url(Media/info-banner-bg.webp);
+    border: 1px;
+    border-radius: 15px;
+    height: 85px;
+    width: 1190px;
+}
+
+#gb1{
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+
+.green-banner h1{
+    position: relative;
+    top: -30px;
+    left: 100px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    width: 800px;
+}
+
+.green-banner h2{
+    position: relative;
+    top: -77px;
+    left: 310px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 800px;
+}
+
+.green-banner button{
+    position: relative;
+    top: -217px;
+    left: 900px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4bb955;
+    height: 45px;
+    width: 170px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#gb2{
+    position: relative;
+    top: -165px;
+    left: 970px;
+}
+
+.best-deals{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width:1250px;
+    height: 600px;
+}
+
+.best-deals h1{
+    color:orange;
+    text-align:left;
+    font-weight: bold;
+    font-size: 60px;
+    width: 460px;
+    height: 100px;
+}
+
+.best-deals h1 span{
+    color:navy;
+}
+
+.where-wanna-fly{
+    position: relative;
+    left: 980px;
+    top: -130px;
+    border-radius: 10px;
+    border: transparent;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.where-wanna-fly h2{
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+    position: relative;
+    left: -20px;
+}
+
+.where-wanna-fly p{
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    left: -8px;
+    top: -3px;
+    width: 100px;
+}
+
+.antalya{
+    border: 1px gray;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 15px gray;
+    width: 390px;
+    height: 440px;
+    position: relative;
+    top: -70px;
+    cursor: pointer;
+}
+.antalya img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.antalya h2{
+    position: relative;
+    left: 130px;
+    top: -15px;
+    width: 120px;
+    font-size: 30px;
+}
+
+.antalya h3{
+    position: relative;
+    left: 143px;
+    top: -30px;
+    width: 120px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.antalya button{
+    width: 340px;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    text-align: center;
+    background-color: #fdc43b;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.antalya button p{
+    font-size: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -20px;
+}
+
+.antalya button span{
+    position: relative;
+    top: -40px;
+}
+
+.izmir{
+    border: 1px gray;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 15px gray;
+    width: 390px;
+    height: 440px;
+    position: relative;
+    left: 420px;
+    top: -510px;
+    cursor: pointer;
+}
+
+.izmir img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.izmir h2{
+    position: relative;
+    left: 153px;
+    top: -15px;
+    width: 120px;
+    font-size: 30px;
+}
+
+.izmir h3{
+    position: relative;
+    left: 150px;
+    top: -30px;
+    width: 120px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.izmir button{
+    width: 340px;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    text-align: center;
+    background-color: #fdc43b;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.izmir button p{
+    font-size: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -20px;
+}
+
+.izmir button span{
+    position: relative;
+    top: -40px;
+}
+
+.lefkosia{
+    border: 1px gray;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 15px gray;
+    width: 390px;
+    height: 440px;
+    position: relative;
+    left: 840px;
+    top: -950px;
+    cursor: pointer;
+    
+}
+.lefkosia img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.lefkosia h2{
+    position: relative;
+    left: 130px;
+    top: -15px;
+    width: 120px;
+    font-size: 30px;
+}
+
+.lefkosia h3{
+    position: relative;
+    left: 143px;
+    
+    width: 120px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.lefkosia button{
+    width: 340px;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    text-align: center;
+    background-color: #fdc43b;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.lefkosia button p{
+    font-size: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -20px;
+}
+
+.lefkosia button span{
+    position: relative;
+    top: -40px;
+}
+
+.cards-header h1{
+    position: relative;
+    top: 100px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: #304659;
+    pointer-events: none;
+}
+
+.cards {
+    display:flex;
+    gap: 22px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    width: 1200px;
+}
+
+.card1 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card1 img {
+    scale: 80%;
+    position: relative;
+    left: 22px;
+    top: 5px;
+}
+
+.card1 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card1 p {
+    position: relative;
+    left: 10px;
+    top: -12px;
+}
+
+.card2 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card2 img {
+    scale: 80%;
+    position: relative;
+    left: 25px;
+}
+
+.card2 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card2 p {
+    position: relative;
+    left: 8px;
+    top: -15px;
+}
+
+.card3 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card3 img {
+    scale: 80%;
+    position: relative;
+    left: 22px;
+    top: 5px;
+}
+
+.card3 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+
+.card3 p {
+    position: relative;
+    left: 12px;
+    top: -15px;
+}
+
+.card4 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card4 img {
+    scale: 80%;
+    position: relative;
+    left: 23px;
+    top: 7px;
+}
+
+.card4 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.card4 p {
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+
+.card5 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card5 img {
+    scale: 80%;
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+
+.card5 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card5 p {
+    position: relative;
+    left: 18px;
+    top: -12px;
+}
+
+.card6 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card6 img {
+    scale: 80%;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.card6 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -7px;
+}
+
+.card6 p {
+    position: relative;
+    left: 25px;
+    top: -18px;
+}
+
+.card7 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card7 img {
+    scale: 80%;
+    position: relative;
+    left: 10px;
+}
+
+.card7 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -17px;
+}
+
+.card7 p {
+    position: relative;
+    left: 22px;
+    top: -7px;
+}
+
+.card8 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card8 img {
+    scale: 80%;
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+
+.card8 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card8 p {
+    position: relative;
+    left: 18px;
+    top: -10px;
+}
+
+.card9 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card9 img {
+    scale: 80%;
+    position: relative;
+    left: 15px;
+}
+
+.card9 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.card9 p {
+    position: relative;
+    left: 18px;
+    top: -18px;
+}
+
+.card10 {
+    cursor: pointer;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card10 img {
+    scale: 80%;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.card10 h2 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 3px;
+}
+
+.card10 p {
+    position: relative;
+    left: 18px;
+    top: -18px;
+}
+
+.mobile-app-add{
+    display:inline-flex;
+    position: relative;
+    top: 300px;
+    left: 140px;
+    background-color: #1f2d3d;
+    width: 1240px;
+    height: 250px;
+    border: 2px transparent;
+    border-radius: 20px; 
+}
+
+.mobile-app-add h1{
+    position: relative;
+    left: 60px;
+    top: 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 250px;
+    color: white;
+}
+
+.mobile-app-add h2{
+    position: relative;
+    top: 70px;
+    left: -155px;
+    font-size: 14px;
+    color:#c1c5c9;
+    font-weight: lighter;
+    width: 350px;
+}
+
+.mobile-app-add button{
+    height: 40px;
+    width: 180px;
+    border: 2px transparent;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 160px;
+    left: -460px;
+    cursor: pointer;
+}
+
+.mobile-app-add button span{
+    color: orange;
+}
+
+.mobile-app-add img{
+    scale: 130%;
+    position: relative;
+    left: -170px;
+    top: -38px;
+}
+
+.mobile-app-add h3{
+    color: #c1c5c9;
+    position: relative;
+    font-size: 17px;
+    font-weight: lighter;
+    top: 80px;
+    left: -80px;
+    width: 280px;
+}
+
+#qr-button{
+    position: relative;
+    left: -50px;
+    top: 85px;
+    height: 80px;
+    width: 90px;
+    background-color: white;
+}
+
+#qr-image{
+    position: relative;
+    top: 3px;
+    left: 1px;
+    height: 47px;
+    width: 47px;
+}
+
+.footer-container{
+    position: relative;
+    top: 400px;
+    background-color: #f4f5f7;
+    height: 500px;
+}
+
+.page-links{
+    position: relative;
+    top: 20px;
+    left: 180px;
+    display: inline-flex;
+    gap: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
+    font-size: 16px;
+    font-weight: lighter;
+    color: darkgray;
+}
+
+.social-links{
+    scale: 80%;
+    position: relative;
+    top: 60px;
+    left: 150px;
+    width: 200px;
+}
+
+.right-sign-in-section{
+    position: relative;
+    left: 1000px;
+    top: -380px;
+    width: 350px;
+    height: fit-content;
+}
+
+.right-sign-in-section h4{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
+    color: gray;
+    position: relative;
+}
+
+#l1{
+    height: 40px;
+    width: 340px;
+    border: 1px gray;
+    border-radius: 3px;
+}
+
+#l2{
+    position: relative;
+    top: 10px;
+    height: 40px;
+    width: 340px;
+    border: 1px gray;
+    border-radius: 3px;
+}
+
+#l3{
+    position: relative;
+    top: 20px;
+    height: 40px;
+    width: 340px;
+    border: 1px gray;
+    border-radius: 3px;
+}
+
+.check{
+    position: relative;
+    top: 40px;
+}
+
+.check label{
+    font-size: 9px;    
+}
+
+#chckbox{
+    scale: 120%;
+}
+
+.captcha{
+    position: relative;
+    top: 35px;
+    left: -70px;
+    scale: 60%;
+}
+
+.right-sign-in-section button{
+    position: relative;
+    top: -35px;
+    left: 250px;
+    height: 30px;
+    width: 85px;
+    background-color: #f49d18;
+    border: 1px transparent;
+    border-radius: 5px;
+    font-family:sans-serif, bold;
+    font-weight: bolder;
+    cursor: pointer;
+}
